@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain | CDAP Project</title>
+  <meta name="description"
+    content="Research domain details, literature survey, and methodology for microdata anonymization.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        DATA<span>Shield</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="domain.html" class="nav-link">Domain</a></li>
+        <li><a href="milestones.html" class="nav-link">Milestones</a></li>
+        <li><a href="documents.html" class="nav-link">Documents</a></li>
+        <li><a href="presentations.html" class="nav-link">Presentations</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="padding: 10rem 0 5rem;">
+    <div class="container">
+      <h1 class="page-title">Research <span class="text-gradient">Domain</span></h1>
+      <p class="page-subtitle">A comprehensive breakdown of the background, problem statement, and methodology of our
+        study.</p>
+    </div>
+  </header>
+
+  <!-- Domain Content -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 900px; margin: 0 auto;">
+
+        <!-- Literature Survey -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-cyan); margin-bottom: 1rem; font-size: 1.8rem;">Literature Survey</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+            Extensive literature has been reviewed in the field of Statistical Disclosure Control (SDC) and
+            Privacy-Preserving Data Publishing (PPDP). Early works primarily focused on simple suppression and
+            generalization. However, models like <strong>k-anonymity</strong> (Sweeney, 2002),
+            <strong>l-diversity</strong> (Machanavajjhala et al., 2007), and <strong>t-closeness</strong> (Li et al.,
+            2007) have become the gold standard for preventing re-identification and attribute disclosure.
+          </p>
+          <p style="color: var(--text-secondary);">
+            Recent advancements incorporate Differential Privacy and Machine Learning-based synthesis, though
+            deterministic anonymization remains preferred for census data due to its need for exactness in specific
+            non-sensitive aggregations.
+          </p>
+        </div>
+
+        <!-- Research Gap -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-blue); margin-bottom: 1rem; font-size: 1.8rem;">Research Gap</h2>
+          <p style="color: var(--text-secondary);">
+            While many generic anonymization tools exist, there is a significant gap in tailored solutions specifically
+            designed for the hierarchical and deeply correlated nature of the Department of Census and Statistics
+            datasets. Existing methods often result in excessive information loss (degrading utility for researchers) or
+            fail to account for complex multi-dimensional vulnerabilities.
+          </p>
+        </div>
+
+        <!-- Research Problem -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-cyan); margin-bottom: 1rem; font-size: 1.8rem;">Research Problem</h2>
+          <p
+            style="color: var(--text-secondary); font-weight: 500; font-size: 1.1rem; border-left: 4px solid var(--accent-cyan); padding-left: 1rem;">
+            "How to effectively anonymize multi-dimensional census microdata to prevent identity and attribute
+            disclosure, while preserving maximum statistical utility for socio-economic research and policymaking?"
+          </p>
+        </div>
+
+        <!-- Research Objectives -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-blue); margin-bottom: 1rem; font-size: 1.8rem;">Research Objectives</h2>
+          <ul style="color: var(--text-secondary); list-style-position: inside; padding-left: 1rem;">
+            <li style="margin-bottom: 0.5rem;">To evaluate the risk of re-identification in current census datasets.
+            </li>
+            <li style="margin-bottom: 0.5rem;">To implement and benchmark state-of-the-art anonymization algorithms
+              (k-anonymity, l-diversity).</li>
+            <li style="margin-bottom: 0.5rem;">To develop an optimized, utility-aware anonymization framework tailored
+              for demographic data.</li>
+            <li>To provide a user-friendly tool/interface for the Department of Census and Statistics to easily
+              anonymize new datasets.</li>
+          </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-cyan); margin-bottom: 1rem; font-size: 1.8rem;">Methodology</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Our approach follows a rigorous scientific
+            methodology:</p>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div
+              style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 2px solid var(--accent-cyan);">
+              <strong>1. Data Profiling & Preprocessing:</strong> Identifying Quasi-Identifiers (QIs), Sensitive
+              Attributes (SAs), and cleansing the raw data.
+            </div>
+            <div
+              style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 2px solid var(--accent-blue);">
+              <strong>2. Risk Assessment:</strong> Calculating initial re-identification risk thresholds.
+            </div>
+            <div
+              style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 2px solid var(--accent-cyan);">
+              <strong>3. Anonymization Engine:</strong> Applying local suppression, global recoding, and
+              micro-aggregation.
+            </div>
+            <div
+              style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 2px solid var(--accent-blue);">
+              <strong>4. Utility Measurement:</strong> Quantifying information loss using metrics like IL (Information
+              Loss) and Truthfulness.
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="glass-card">
+          <h2 style="color: var(--accent-blue); margin-bottom: 1rem; font-size: 1.8rem;">Technologies Used</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <span
+              style="background: rgba(59, 130, 246, 0.2); color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+            <span
+              style="background: rgba(59, 130, 246, 0.2); color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Pandas
+              & NumPy</span>
+            <span
+              style="background: rgba(59, 130, 246, 0.2); color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">ARX
+              Anonymization Tool</span>
+            <span
+              style="background: rgba(59, 130, 246, 0.2); color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Scikit-Learn
+              (Utility Evaluation)</span>
+            <span
+              style="background: rgba(59, 130, 246, 0.2); color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">React.js
+              (Dashboard Interface)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">DATA<span>Shield</span></div>
+        <p class="footer-desc">Microdata Anonymization for the Department of Census and Statistics.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2026 DataShield. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

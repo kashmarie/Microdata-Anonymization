@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents | CDAP Project</title>
+  <meta name="description" content="Project documents, charters, and final reports for the CDAP project.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .doc-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 4px solid transparent;
+    }
+
+    .doc-card:hover {
+      border-top-color: var(--accent-cyan);
+    }
+
+    .doc-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .doc-title {
+      font-size: 1.25rem;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .doc-status {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .status-completed {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.5);
+    }
+
+    .status-pending {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+    }
+
+    .doc-link {
+      margin-top: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        DATA<span>Shield</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="domain.html" class="nav-link">Domain</a></li>
+        <li><a href="milestones.html" class="nav-link">Milestones</a></li>
+        <li><a href="documents.html" class="nav-link">Documents</a></li>
+        <li><a href="presentations.html" class="nav-link">Presentations</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="padding: 10rem 0 5rem;">
+    <div class="container">
+      <h1 class="page-title">Project <span class="text-gradient">Documents</span></h1>
+      <p class="page-subtitle">Access all formal documentation produced throughout the project lifecycle.</p>
+    </div>
+  </header>
+
+  <!-- Documents Content -->
+  <section class="section" style="padding-top: 0; min-height: 50vh;">
+    <div class="container">
+
+      <div class="doc-grid">
+
+        <!-- Project Charter -->
+        <div class="glass-card doc-card">
+          <div class="doc-icon">📄</div>
+          <h2 class="doc-title">Project Charter</h2>
+          <span class="doc-status status-completed">Completed</span>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
+            The initial document officially authorizing the existence of the project and providing the project manager
+            with the authority to apply organizational resources.
+          </p>
+          <a href="#" class="btn btn-outline doc-link" target="_blank">View Document</a>
+        </div>
+
+        <!-- Proposal Document -->
+        <div class="glass-card doc-card">
+          <div class="doc-icon">📑</div>
+          <h2 class="doc-title">Proposal Document</h2>
+          <span class="doc-status status-completed">Completed</span>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
+            Detailed description of the proposed solution for Microdata Anonymization, including literature review,
+            system architecture, and timeline.
+          </p>
+          <a href="#" class="btn btn-outline doc-link" target="_blank">View Document</a>
+        </div>
+
+        <!-- Check List Documents -->
+        <div class="glass-card doc-card">
+          <div class="doc-icon">☑️</div>
+          <h2 class="doc-title">Check List Documents</h2>
+          <span class="doc-status status-pending">In Progress</span>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
+            Evaluation criteria checklists and requirement traceability matrices used during the development and testing
+            phases.
+          </p>
+          <a href="#" class="btn btn-outline doc-link" target="_blank" style="opacity: 0.7; pointer-events: none;">Link
+            Pending</a>
+        </div>
+
+        <!-- Final Document -->
+        <div class="glass-card doc-card">
+          <div class="doc-icon">📚</div>
+          <h2 class="doc-title">Final Document (Main + 4)</h2>
+          <span class="doc-status status-pending">Pending</span>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
+            The comprehensive final thesis containing the main report and the 4 supplementary documents detailing
+            algorithms, test cases, and user manuals.
+          </p>
+          <a href="#" class="btn btn-outline doc-link" target="_blank" style="opacity: 0.7; pointer-events: none;">Link
+            Pending</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">DATA<span>Shield</span></div>
+        <p class="footer-desc">Microdata Anonymization for the Department of Census and Statistics.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2026 DataShield. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

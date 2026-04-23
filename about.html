@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CDAP Project</title>
+  <meta name="description" content="Meet the team behind the DataShield Microdata Anonymization project.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .team-card {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+      display: block;
+      object-fit: cover;
+      border: 4px solid var(--bg-secondary);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    }
+
+    .member-name {
+      font-size: 1.4rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .member-role {
+      color: var(--accent-cyan);
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .member-email {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .member-email:hover {
+      color: var(--accent-blue);
+    }
+
+    .member-achievements {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        DATA<span>Shield</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="domain.html" class="nav-link">Domain</a></li>
+        <li><a href="milestones.html" class="nav-link">Milestones</a></li>
+        <li><a href="documents.html" class="nav-link">Documents</a></li>
+        <li><a href="presentations.html" class="nav-link">Presentations</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="padding: 10rem 0 5rem;">
+    <div class="container">
+      <h1 class="page-title">Meet the <span class="text-gradient">Team</span></h1>
+      <p class="page-subtitle">The researchers and developers working on the Microdata Anonymization system.</p>
+    </div>
+  </header>
+
+  <!-- About Us Content -->
+  <section class="section" style="padding-top: 0; min-height: 50vh;">
+    <div class="container">
+
+      <div class="team-grid">
+
+        <!-- Member 1 -->
+        <div class="glass-card team-card">
+          <img src="assets/team/madhuwarsha.png" alt="Madhuwarsha T" class="avatar">
+          <h2 class="member-name">Madhuwarsha T</h2>
+          <div class="member-role">Leader</div>
+          <a href="mailto:leader@my.sliit.lk" class="member-email">it22364760@my.sliit.lk</a>
+          <div class="member-achievements">
+            Auto SDC : Agentic AI for SDC Technique Recommender and Automation​.
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="glass-card team-card">
+          <img src="assets/team/mujahid.png" alt="Mujahid I M M" class="avatar">
+          <h2 class="member-name">Mujahid I M M</h2>
+          <div class="member-role">Group Member</div>
+          <a href="mailto:member2@my.sliit.lk" class="member-email">it22266750@my.sliit.lk</a>
+          <div class="member-achievements">
+            NLP-Driven Identifier & Quasi-Identifier Detection for Census Microdata.
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="glass-card team-card">
+          <img src="assets/team/fernando.png" alt="Fernando S K" class="avatar">
+          <h2 class="member-name"> Fernando S K</h2>
+          <div class="member-role">Group Member</div>
+          <a href="mailto:member3@my.sliit.lk" class="member-email">it22129680@my.sliit.lk</a>
+          <div class="member-achievements">
+            Integrating Differential Privacy with Permutation Paradigm for Synthetic Data Generation.
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="glass-card team-card">
+          <img src="assets/team/sakiththiyan.png" alt="Sakiththiyan T" class="avatar">
+          <h2 class="member-name">Sakiththiyan T</h2>
+          <div class="member-role">Group Member</div>
+          <a href="mailto:member4@my.sliit.lk" class="member-email">it22319074@my.sliit.lk</a>
+          <div class="member-achievements">
+            Evaluating Re-identification Risks in Anonymized Data Using Machine Learning.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">DATA<span>Shield</span></div>
+        <p class="footer-desc">Microdata Anonymization for the Department of Census and Statistics.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="domain.html">Domain</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2026 DataShield. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
