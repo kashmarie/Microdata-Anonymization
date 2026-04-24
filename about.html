@@ -64,6 +64,38 @@
       padding: 1rem;
       border-radius: 8px;
     }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-icon:hover {
+      background: var(--accent-cyan);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .social-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
   </style>
 </head>
 
@@ -109,7 +141,11 @@
             style="width: 150px; height: 150px;">
           <h2 class="member-name">Dr. Prasanna Sumathipala</h2>
 
-          <a href="mailto:supervisor@sliit.lk" class="member-email">prasanna.s@sliit.lk</a>
+          <div class="social-links">
+            <a href="mailto:prasanna.s@sliit.lk" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
 
         </div>
       </div>
@@ -124,7 +160,14 @@
           <img src="assets/team/madhuwarsha.png" alt="Madhuwarsha T" class="avatar">
           <h2 class="member-name">Madhuwarsha T</h2>
           <div class="member-role">Leader</div>
-          <a href="mailto:leader@my.sliit.lk" class="member-email">it22364760@my.sliit.lk</a>
+          <div class="social-links">
+            <a href="mailto:it22364760@my.sliit.lk" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/madhu-w-24825529a" target="_blank" class="social-icon" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <div class="member-achievements">
             Auto SDC : Agentic AI for SDC Technique Recommender and Automation​.
           </div>
@@ -135,7 +178,14 @@
           <img src="assets/team/mujahid.png" alt="Mujahid I M M" class="avatar">
           <h2 class="member-name">Mujahid I M M</h2>
           <div class="member-role">Group Member</div>
-          <a href="mailto:member2@my.sliit.lk" class="member-email">it22266750@my.sliit.lk</a>
+          <div class="social-links">
+            <a href="mailto:it22266750@my.sliit.lk" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="http://www.linkedin.com/in/mujahid-m-9112a9254" target="_blank" class="social-icon" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <div class="member-achievements">
             NLP-Driven Identifier & Quasi-Identifier Detection for Census Microdata.
           </div>
@@ -146,7 +196,14 @@
           <img src="assets/team/fernando.png" alt="Fernando S K" class="avatar">
           <h2 class="member-name"> Fernando S K</h2>
           <div class="member-role">Group Member</div>
-          <a href="mailto:member3@my.sliit.lk" class="member-email">it22129680@my.sliit.lk</a>
+          <div class="social-links">
+            <a href="mailto:it22129680@my.sliit.lk" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kashmarie" target="_blank" class="social-icon" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <div class="member-achievements">
             Integrating Differential Privacy with Permutation Paradigm for Synthetic Data Generation.
           </div>
@@ -157,7 +214,14 @@
           <img src="assets/team/sakiththiyan.png" alt="Sakiththiyan T" class="avatar">
           <h2 class="member-name">Sakiththiyan T</h2>
           <div class="member-role">Group Member</div>
-          <a href="mailto:member4@my.sliit.lk" class="member-email">it22319074@my.sliit.lk</a>
+          <div class="social-links">
+            <a href="mailto:it22319074@my.sliit.lk" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sakiththiyan06" target="_blank" class="social-icon" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <div class="member-achievements">
             Evaluating Re-identification Risks in Anonymized Data Using Machine Learning.
           </div>
