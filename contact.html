@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
+      display: flex;
+      justify-content: center;
       gap: 3rem;
     }
 
@@ -122,39 +122,8 @@
 
       <div class="contact-layout">
 
-        <!-- Contact Info -->
-        <div>
-          <h2 style="font-size: 1.8rem; margin-bottom: 2rem;">Contact Information</h2>
-
-          <div class="contact-info-item">
-            <div class="contact-icon">📍</div>
-            <div class="contact-text">
-              <h3>Address</h3>
-              <p>Faculty of Computing, SLIIT<br>New Kandy Road, Malabe<br>Sri Lanka</p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon">📞</div>
-            <div class="contact-text">
-              <h3>Phone</h3>
-              <p>+94 11 234 5678</p>
-              <p>+94 77 123 4567</p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-text">
-              <h3>Email</h3>
-              <a href="mailto:contact@datashield.sliit.lk">contact@datashield.sliit.lk</a><br>
-              <a href="mailto:supervisor@sliit.lk">supervisor@sliit.lk</a>
-            </div>
-          </div>
-        </div>
-
         <!-- Contact Form -->
-        <div class="glass-card">
+        <div class="glass-card" style="max-width: 800px; width: 100%;">
           <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Send us a Message</h2>
           <p style="color: var(--text-secondary); margin-bottom: 2rem;">Use the template below to send an email directly
             to our project group.</p>
